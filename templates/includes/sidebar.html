@@ -28,35 +28,7 @@ Online Tutoring
 
 {% if user.is_authenticated %}
 
-{% comment %} 
-<div class="sidebar-user">
 
-
-{% if user.profile_picture %}
-
-<img src="{{user.profile_picture.url}}"
-class="profile-image">
-
-{% else %}
-
-<img src="{% static 'images/default-user.png' %}"
-class="profile-image">
-
-{% endif %}
-
-
-
-<h5>
-{{user.username}}
-</h5>
-
-
-<span>
-{{user.role|title}}
-</span>
-
-
-</div> {% endcomment %}
 
 
 {% endif %}
@@ -102,6 +74,94 @@ Certificates
 </a>
 </li>
 
+<li>
+<a href="{% url 'accounts:home' %}">
+<i class="fa fa-home"></i>
+home
+</a>
+</li>
+
+
+<li>
+<a href="{% url 'accounts:register' %}">
+<i class="fa fa-register"></i>
+Register
+</a>
+</li>
+
+
+<li>
+<a href="{% url 'accounts:login' %}">
+<i class="fa fa-login"></i>
+login
+</a>
+</li>
+
+<li>
+<a href="{% url 'accounts:edit_profile' %}">
+<i class="fa fa-edit-profile"></i>
+edit profile 
+</a>
+</li>
+
+
+<li>
+<a href="{% url 'accounts:forgot_password' %}">
+<i class="fa fa-forgot-password"></i>
+forgot password
+</a>
+</li>
+
+
+<li>
+<a href="{% url 'accounts:password_reset_done' %}">
+<i class="fa fa-reset-password-done"></i>
+reset password 
+</a>
+</li>
+
+
+
+
+
+<li>
+<a href="{% url 'accounts:password_reset_complete' %}">
+<i class="fa fa-password_reset_complete"></i>
+password_reset_complete
+</a>
+</li>
+
+
+<li>
+<a href="{% url 'accounts:login' %}">
+<i class="fa fa-login"></i>
+login
+</a>
+</li>
+
+
+<li>
+<a href="{% url 'accounts:login' %}">
+<i class="fa fa-login"></i>
+login
+</a>
+</li>
+
+
+<li>
+<a href="{% url 'accounts:login' %}">
+<i class="fa fa-login"></i>
+login
+</a>
+</li>
+
+
+<li>
+<a href="{% url 'accounts:login' %}">
+<i class="fa fa-login"></i>
+login
+</a>
+</li>
 
 
 <li>

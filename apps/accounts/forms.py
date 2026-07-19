@@ -34,7 +34,7 @@ class RegisterForm(UserCreationForm):
     )
 
     phone = forms.CharField(
-        required=False,
+        required=True,
         widget=forms.TextInput(attrs={
             "class": "form-control",
             "placeholder": "Phone Number"
